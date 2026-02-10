@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { APP_URL } from './config';
 import { translations, skills, projects } from './data';
 import type { Lang, Translations } from './types';
 import { About } from './components/About';
@@ -9,6 +10,10 @@ import { Header } from './components/Header';
 
 const App: React.FC = () => {
   const [lang, setLang] = useState<Lang>('pt');
+
+  // Debug: Verifique isso no Console do navegador (F12)
+  console.log('Estou em Produção?', import.meta.env.PROD);
+  console.log('URL Base:', APP_URL);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
