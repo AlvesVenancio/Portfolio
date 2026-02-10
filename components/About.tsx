@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { APP_URL } from '../config';
 import type { Translations } from '../types';
 
 interface AboutProps {
@@ -19,7 +20,7 @@ export const About: React.FC<AboutProps> = ({ t }) => {
       </div>
       <div className="w-full h-80 md:absolute md:inset-0 md:h-full md:flex md:justify-end">
         <img
-          src="/assets/images/felipe.jpeg"
+          src={`${APP_URL}/assets/images/felipe.jpeg`}
           alt="Felipe Venancio"
           className="w-full h-full object-cover object-center md:w-auto md:h-full"
         />

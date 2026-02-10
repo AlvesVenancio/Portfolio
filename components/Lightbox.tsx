@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
+import { APP_URL } from '../config';
 import type { Project, Translations } from '../types';
 
 interface LightboxProps {
@@ -57,7 +58,7 @@ export const Lightbox: React.FC<LightboxProps> = ({ project, onClose, onNext, on
         onClick={(e) => e.stopPropagation()}
       >
         <img
-          src={`/assets/images/${project.imageSlug}.png`}
+          src={`${APP_URL}/assets/images/${project.imageSlug}.png`}
           alt={`Full view of ${project.name}`}
           className="rounded-lg transition-all duration-200 ease-out object-contain"
           style={{ 

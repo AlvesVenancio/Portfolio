@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { APP_URL } from '../config';
 import type { Project } from '../types';
 
 interface ProjectCardProps {
@@ -15,7 +16,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
     >
       <img
         className="absolute top-0 left-0 w-full h-auto object-cover transition-transform duration-[7000ms] ease-linear group-hover:-translate-y-[calc(100%-20rem)]"
-        src={`/assets/images/${project.imageSlug}.png`}
+        src={`${APP_URL}/assets/images/${project.imageSlug}.png`}
         alt={`Screenshot of ${project.name}`}
         loading="lazy"
         width="400"
