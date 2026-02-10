@@ -29,14 +29,19 @@
   <script type="importmap">
 {
   "imports": {
+    "react": "https://esm.sh/react@19.2.4",
+    "react-dom/client": "https://esm.sh/react-dom@19.2.4/client",
     "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
   }
 }
 </script>
+<!-- 1. Add Babel Standalone to transpile TSX in the browser -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
   <body class="bg-[#121212] text-white antialiased">
     <div id="root"></div>
+    <!-- 2. Load the main application script, telling Babel to handle it -->
+    <script type="text/babel" data-type="module" src="index.tsx"></script>
   </body>
 </html>
