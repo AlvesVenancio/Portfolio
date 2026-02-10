@@ -1,9 +1,11 @@
-
 {
-  "builds": [
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
     {
-      "src": "*",
-      "use": "@vercel/static"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
