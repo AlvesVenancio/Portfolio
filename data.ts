@@ -8,8 +8,8 @@ export const translations: Record<Lang, Translations> = {
     navProjects: 'Projetos',
     aboutTitle: 'Sobre Mim',
     aboutText: 'Developer Web/Designer com mais de 5 anos de experiência. Nesses anos de experiência desenvolvi sites com Wordpress e Elementor. Construindo funcionalidades personalizadas com plugins e temas sempre que necessário.',
-    skillsTitle: 'Habilidades Técnicas',
-    projectsTitle: 'Portfólio de Projetos',
+    skillsTitle: 'Habilidades',
+    projectsTitle: 'Projetos',
     close: 'Fechar',
   },
 en: {
@@ -18,8 +18,8 @@ en: {
     navProjects: 'Projects',
     aboutTitle: 'About Me',
     aboutText: "Web Developer/Designer with more than 5 years of experience. Throughout this period, I've specialized in developing websites using WordPress and Elementor, creating customized functionalities with plugins and themes whenever necessary.",
-    skillsTitle: 'Technical Skills',
-    projectsTitle: 'Project Portfolio',
+    skillsTitle: 'Skills',
+    projectsTitle: 'Projects',
     close: 'Close',
   },
 };

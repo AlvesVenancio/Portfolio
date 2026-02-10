@@ -28,7 +28,7 @@ export const Header: React.FC<HeaderProps> = ({ lang, t, onLangChange }) => {
     <header className="sticky top-0 bg-[#121212]/80 backdrop-blur-sm z-50">
       <div className="max-w-[1140px] mx-auto px-4 py-4 flex justify-between items-center">
         <a href="#" className="text-2xl font-bold tracking-tight">
-          Felipe<span className="text-cyan-400">.</span>
+          Felipe Venancio<span className="text-cyan-400">.</span>
         </a>
         <nav className="hidden md:flex items-center space-x-6">
           {navItems.map((item) => (
