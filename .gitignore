@@ -20,9 +20,3 @@ dist-ssr
 # OS files
 .DS_Store
 Thumbs.db
-
-# Ignore project images except felipe.jpeg
-assets/images/*
-!assets/images/felipe.jpeg
-public/assets/images/*
-!public/assets/images/felipe.jpeg
