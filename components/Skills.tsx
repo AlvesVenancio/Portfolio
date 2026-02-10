@@ -11,7 +11,7 @@ interface SkillsProps {
 export const Skills: React.FC<SkillsProps> = ({ t, skills }) => {
   return (
     <section id="skills" className="py-16">
-      <h2 className="text-3xl font-bold text-center mb-10">{t.skillsTitle}</h2>
+      <h2 className="text-3xl font-bold text-center mb-10 text-white">{t.skillsTitle}</h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 text-center">
         {skills.map((skill) => (
           <div key={skill.name} className="flex flex-col items-center justify-center p-4 bg-gray-800/50 rounded-lg transition-transform hover:scale-105 hover:bg-gray-800">

@@ -27,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({ lang, t, onLangChange }) => {
   return (
     <header className="sticky top-0 bg-[#121212]/80 backdrop-blur-sm z-50">
       <div className="max-w-[1140px] mx-auto px-4 py-4 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold tracking-tight">
+        <a href="#" className="text-2xl font-bold tracking-tight text-white">
           Felipe Venancio<span className="text-cyan-400">.</span>
         </a>
         <nav className="hidden md:flex items-center space-x-6">
@@ -46,14 +46,14 @@ export const Header: React.FC<HeaderProps> = ({ lang, t, onLangChange }) => {
           {lang === 'pt' ? (
             <button
               onClick={() => onLangChange('en')}
-              className="text-sm px-3 py-2 border border-gray-600 rounded-md hover:bg-gray-800 transition-colors"
+              className="text-sm px-3 py-2 border border-gray-600 rounded-md hover:bg-gray-800 transition-colors text-white"
             >
               EN
             </button>
           ) : (
             <button
               onClick={() => onLangChange('pt')}
-              className="text-sm px-3 py-2 border border-gray-600 rounded-md hover:bg-gray-800 transition-colors"
+              className="text-sm px-3 py-2 border border-gray-600 rounded-md hover:bg-gray-800 transition-colors text-white"
             >
               PT
             </button>
