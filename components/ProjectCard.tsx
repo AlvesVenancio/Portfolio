@@ -1,7 +1,8 @@
 
 import React from 'react';
-import { APP_URL } from '../config';
 import type { Project } from '../types';
+
+const projectImages = import.meta.glob('../assets/images/*.png', { eager: true });
 
 interface ProjectCardProps {
   project: Project;
@@ -9,14 +10,19 @@ interface ProjectCardProps {
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
+  const imagePath = `../assets/images/${project.imageSlug}.png`;
+  const imageSrc = (projectImages[imagePath] as { default: string })?.default;
+
+  const isBravo = project.imageSlug.includes('bravocameras');
+
   return (
     <div
       onClick={onClick}
       className="group relative h-80 w-full overflow-hidden rounded-lg shadow-lg cursor-pointer transition-transform hover:-translate-y-1 bg-gray-900"
     >
       <img
-        className="absolute top-0 left-0 w-full h-auto object-cover transition-transform duration-[7000ms] ease-linear group-hover:-translate-y-[calc(100%-20rem)]"
-        src={`${APP_URL}/assets/images/${project.imageSlug}.png`}
+        className={`absolute top-0 left-0 w-full ${isBravo ? 'h-full' : 'h-auto'} object-cover transition-transform duration-[7000ms] ease-linear group-hover:-translate-y-[calc(100%-20rem)]`}
+        src={imageSrc}
         alt={`Screenshot of ${project.name}`}
         loading="lazy"
         width="400"

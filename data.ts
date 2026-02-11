@@ -41,6 +41,7 @@ export const skills: Skill[] = [
 
 const projectDomains = [
   'paineirascorcovado.com.br',
+  'jeriparque.com.br',
   'bcrj.org.br',
   'gremar.org.br',
   'nortecquimica.com.br',
@@ -62,11 +63,13 @@ const projectDomains = [
   'mpeengenharia.com.br',
   'psicologiario.com.br',
   'altiplanoengenharia.com.br',
+  'pipocadogigante.com.br',
+  'ontimetransporte.com.br',
   'bravocameras.com.br',
   'camarj.com.br',
   'clusterinfo.com.br',
   'maccomevap.com.br',
-  'alutechsa.com.br'
+  'alutechsa.com.br',
 ];
 
 export const projects: Project[] = projectDomains.map((domain, index) => {

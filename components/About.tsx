@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { APP_URL } from '../config';
 import type { Translations } from '../types';
 
 import felipeImg from "../assets/images/felipe.jpeg";

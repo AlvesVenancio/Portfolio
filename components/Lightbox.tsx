@@ -1,7 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
-import { APP_URL } from '../config';
 import type { Project, Translations } from '../types';
+
+const projectImages = import.meta.glob('../assets/images/*.png', { eager: true });
 
 interface LightboxProps {
   project: Project;
@@ -48,6 +49,9 @@ export const Lightbox: React.FC<LightboxProps> = ({ project, onClose, onNext, on
     setZoom((prev) => Math.max(prev - 0.5, 1));
   };
 
+  const imagePath = `../assets/images/${project.imageSlug}.png`;
+  const imageSrc = (projectImages[imagePath] as { default: string })?.default;
+
   return (
     <div
       className="fixed inset-0 bg-black/90 z-50 overflow-auto flex"
@@ -58,7 +62,7 @@ export const Lightbox: React.FC<LightboxProps> = ({ project, onClose, onNext, on
         onClick={(e) => e.stopPropagation()}
       >
         <img
-          src={`${APP_URL}/assets/images/${project.imageSlug}.png`}
+          src={imageSrc}
           alt={`Full view of ${project.name}`}
           className="rounded-lg transition-all duration-200 ease-out object-contain"
           style={{ 
