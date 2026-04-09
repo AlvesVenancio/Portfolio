@@ -17,7 +17,7 @@ en: {
     navSkills: 'Skills',
     navProjects: 'Projects',
     aboutTitle: 'About Me',
-    aboutText: "Web Developer/Designer with more than 5 years of experience. Throughout this period, I've specialized in developing websites using WordPress and Elementor, creating customized functionalities with plugins and themes whenever necessary.",
+    aboutText: "Web/Front-End Developer with over 5 years of experience. During these years, I have developed websites using WordPress and Elementor, building custom functionalities with plugins and themes whenever necessary. In my Front-End roles, I have created responsive interfaces and modern applications using React JS, Expo (React Native), and API integrations.",
     skillsTitle: 'Skills',
     projectsTitle: 'Projects',
     close: 'Close',
