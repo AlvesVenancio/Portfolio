@@ -7,7 +7,7 @@ export const translations: Record<Lang, Translations> = {
     navSkills: 'Habilidades',
     navProjects: 'Projetos',
     aboutTitle: 'Sobre Mim',
-    aboutText: 'Developer Web/Designer com mais de 5 anos de experiência. Nesses anos de experiência desenvolvi sites com Wordpress e Elementor. Construindo funcionalidades personalizadas com plugins e temas sempre que necessário.',
+    aboutText: 'Desenvolvedor Web/Front-End com mais de 5 anos de experiência. Nesses anos desenvolvi sites com Wordpress e Elementor, construindo funcionalidades personalizadas com plugins e temas sempre que necessário. Na atuação como Front-End, criei interfaces responsivas e aplicações modernas utilizando React JS, Expo (React Native), integração de APIs.',
     skillsTitle: 'Habilidades',
     projectsTitle: 'Projetos',
     close: 'Fechar',

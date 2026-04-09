@@ -15,7 +15,7 @@ export const About: React.FC<AboutProps> = ({ t }) => {
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 leading-tight tracking-tighter text-gray-900">
           Felipe Venancio
         </h1>
-        <p className="text-lg md:text-xl text-gray-600">
+        <p className="text-lg md:text-lg text-gray-600">
           {t.aboutText}
         </p>
       </div>
